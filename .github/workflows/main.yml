@@ -10,6 +10,9 @@ jobs:
   build:
     name: Deploy to staging
     runs-on: ubuntu-latest
+    defaults:
+      run:
+          working-directory: ./sb-components
 
     steps:
       - name: Setup Node.js
@@ -21,8 +24,7 @@ jobs:
         run: yarn install
 
       - name: Build app
-        run: |
-          cd sb-components/sb-components
+        run:
           yarn build
 
       - name: Semantic release
