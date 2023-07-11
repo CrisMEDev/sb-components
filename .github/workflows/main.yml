@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: deploy to staging
+    name: Deploy to staging
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +21,9 @@ jobs:
         run: yarn install
 
       - name: Build app
-        run: yarn build
+        run: |
+          cd sb-components/sb-components
+          yarn build
 
       - name: Semantic release
         env:
