@@ -55,7 +55,7 @@
     "prop-types": "15.8.1",
     "rimraf": "^5.0.1",
     "semantic-release": "^21.0.7",
-    "storybook": "7.0.26",
+    "storybook": "7.0.27",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   },
