@@ -18,3 +18,4 @@ export var MyLabel = function (_a) {
     var _b = _a.label, label = _b === void 0 ? 'No label' : _b, _c = _a.size, size = _c === void 0 ? 'normal' : _c, _d = _a.color, color = _d === void 0 ? 'primary' : _d, props = __rest(_a, ["label", "size", "color"]);
     return (_jsx("span", { className: "label ".concat(size, " text-").concat(color), style: { color: props.fontColor }, children: props.allCaps ? label.toUpperCase() : label }));
 };
+export default MyLabel;

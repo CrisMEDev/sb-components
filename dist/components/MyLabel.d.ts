@@ -16,3 +16,4 @@ export interface MyLabelProps {
  * Componente principal para interacción con usuario
  */
 export declare const MyLabel: ({ label, size, color, ...props }: MyLabelProps) => import("react/jsx-runtime").JSX.Element;
+export default MyLabel;
